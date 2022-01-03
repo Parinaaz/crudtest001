@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser=require('body-parser');
 //const { urlencoded } = require('body-parser');
 const app = express();
-app.listen(3000,function(){
+app.listen(process.env.PORT || 3000,function(){
     console.log("Hello from Arzaan baby");
 })
 
